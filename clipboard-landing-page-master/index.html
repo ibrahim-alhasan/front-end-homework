@@ -7,64 +7,72 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Clipboard landing page</title>
+  
 
-<link
-href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-rel="stylesheet"
-/>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  body{
+    font-family:Bai Jamjuree;
+    font-weight: 400;
+  }
+  </style>
 </head>
-<body class="font-sans text-gray-900 ">
+
+<body class=" text-gray-900 ">
 
 
-<header class="w-full h-screen bg-center bg-no-repeat bg-cover text-center" style="background-image: url('./images/bg-header-desktop.png')">
+<header class="w-full bg-center bg-no-repeat bg-cover text-center" style="background-image: url('./images/bg-header-desktop.png')">
 <div class="container mx-auto flex flex-col  items-center h-full px-4 md:px-0">
-  <img src="./images/logo.svg" alt="logo" class="w-24 mt-32" />
-  <h1 class="text-4xl font-bold text-gray-900 mt-8 ">A history of br everything you copy</h1>
-  <p class="text-lg text-gray-400 mb-16 mt-8">
-    Clipboard allows you to track and organize everything you copy.
+  <img src="./images/logo.svg" alt="logo" class="w-36 md:w-24 mt-32 mb-4 ml-0 md:ml-10 " />
+  <h1 class="text-4xl font-semibold  text-gray-900 mt-8 ">A history of  everything you copy</h1>
+  <p class="text-lg text-gray-400 mb-16 mt-4">
+    Clipboard allows you to track and organize everything  you copy.
     Instantly <br />access your clipboard on all your devices.
   </p>
-  <div class="flex flex-col w-80 md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 md:w-3/5">
-    <button class="bg-green-500 text-white py-4 px-8 rounded-full transform transition-transform hover:scale-110 shadow-2xl ">Download for iOS</button>
-    <button class="bg-blue-500 text-white py-4 px-8 rounded-full transform transition-transform hover:scale-110 shadow-2xl   ">Download for Mac</button>
+  <div class="flex flex-col w-80 md:flex-row justify-center mx-auto space-y-4 md:space-y-0 md:space-x-4  md:w-3/5">
+    <button class="bg-[#27bba5] text-white py-4 px-8 rounded-full transform transition-transform hover:scale-110 shadow-2xl border-b-2 border-b-solid border-b-[#188f7b]">Download for iOS</button>
+    <button class="bg-[#5f75fe] text-white py-4 px-8 rounded-full transform transition-transform hover:scale-110 shadow-2xl border-b-2 border-b-solid border-b-[#4b56d4]   ">Download for Mac</button>
   </div>
 </div>
 </header>
 
 <section class="py-16 bg-white  " >
-<div class="text-center mb-12 px-4">
-  <h2 class="text-3xl font-semibold text-gray-900 mb-4">Keep track of your snippets</h2>
+<div class="text-center mb-12 px-4 mt-8">
+  <h1 class="text-3xl font-semibold text-gray-900 mb-4">Keep track of your snippets</h1>
   <p class="text-lg text-gray-400">
     Clipboard instantly stores any item you copy in the cloud, meaning you can access <br />
-    your snippets immediately on all your devices. Our Mac and iOS apps will help you <br />
+    your snippets immediately on all your devices. Our Mac and iOS apps will help you <br class="hidden md:block" />
     organize everything.
 
   
   </p>
 </div>
-<div class="container mx-auto flex flex-col lg:flex-row items-center px-4 md:px-0">
-  <div class="lg:w-1/2 mb-8 lg:mb-0">
-    <img src="./images/image-computer.png" alt="computer" />
+<div class="container mx-auto flex flex-col lg:flex-row items-center px-4 gap-16 md:px-0">
+  <div class="w-auto mb-8 mt-4 md:mb-0 -ml-32">
+    <img src="./images/image-computer.png" alt="computer " class="w-80  md:w-auto ml-28 md:ml-0" />
   </div>
-  <div class="lg:w-1/2 lg:pl-12 space-y-8">
+  <div class=" lg:w-1/2 lg:pl-12 space-y-14 lg:text-left text-center ">
     <div>
       <h3 class="text-xl font-medium text-gray-900 mb-2 ">Quick Search</h3>
       <p class="text-lg text-gray-400">
-        Easily search your snippets by content, category, web address, <br />
+        Easily search your snippets by content, <br class="hidden md:block"> category, web address, 
         application, and more.
       </p>
     </div>
     <div>
       <h3 class="text-xl font-medium text-gray-900 mb-2">iCloud Sync</h3>
       <p class="text-lg text-gray-400">
-        Instantly saves and syncs snippets across all <br />
+        Instantly saves and syncs snippets across all <br class="hidden md:block" />
         your devices.
       </p>
     </div>
     <div>
       <h3 class="text-xl font-medium text-gray-900 mb-2 ">Complete History</h3>
       <p class="text-lg text-gray-400">
-        Retrieve any snippets from the first moment <br />
+        Retrieve any snippets from the first moment <br class="hidden md:block" />
         you started using the app.
       </p>
     </div>
@@ -72,27 +80,27 @@ rel="stylesheet"
 </div>
 </section>
 <!--  ##################### -->
-<section class="py-16 bg-gray-100">
+<section class="py-16 -mb-12">
 <div class="text-center mb-12 px-4">
-  <h2 class="text-3xl font-semibold text-gray-900 mb-4">Access Clipboard anywhere</h2>
+  <h1 class="text-3xl font-semibold text-gray-900 mb-4">Access Clipboard anywhere</h1>
   <p class="text-lg text-gray-400">
-    Whether you’re on the go, or at your computer, you can access all your Clipboard <br />
+    Whether you’re on the go, or at your computer, you can access all your Clipboard <br class="hidden md:block" />
     snippets in a few simple clicks.
   </p>
 </div>
 <div class="container mx-auto">
-  <img src="./images/image-devices.png" alt="" class="mx-auto" />
+  <img src="./images/image-devices.png" alt="" class="mx-auto mt-24" />
 </div>
 </section>
 <!--  #################### -->
-<section class="py-16 bg-white" id="workflow">
+<section class="py-16 bg-white ml-0 md:ml-32  mr-0 md:mr-32" >
 <div class="text-center mb-12 px-4">
-  <h2 class="text-3xl font-semibold text-gray-900 mb-4">Supercharge your workflow</h2>
+  <h1 class="text-3xl font-semibold text-gray-900 mb-4">Supercharge your workflow</h1>
   <p class="text-lg text-gray-400">We’ve got the tools to boost your productivity.</p>
 </div>
 <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8  px-4 md:px-0">
   <div class=" text-center ">
-    <img src="./images/icon-blacklist.svg" alt="" class="mx-auto mb-4 h-12" />
+    <img src="./images/icon-blacklist.svg" alt="" class="mx-auto w-8 h-8   mb-8  " />
     <h3 class="text-xl font-medium text-gray-900 mb-2">Create blacklists</h3>
     <p class="text-lg text-gray-400">
       Ensure sensitive information never makes its way to your clipboard
@@ -100,14 +108,14 @@ rel="stylesheet"
     </p>
   </div>
   <div class="text-center ">
-    <img src="./images/icon-text.svg" alt="" class="mx-auto mb-4 h-12" />
+    <img src="./images/icon-text.svg" alt="" class="mx-auto mb-8 w-8 h-8" />
     <h3 class="text-xl font-medium text-gray-900 mb-2">Plain text snippets</h3>
     <p class="text-lg text-gray-400">
       Remove unwanted formatting from copied text for a consistent look.
     </p>
   </div>
   <div class="text-center ">
-    <img src="./images/icon-preview.svg" alt="" class="mx-auto mb-4 h-12" />
+    <img src="./images/icon-preview.svg" alt="" class="mx-auto mb-8 w-12 h-8" />
     <h3 class="text-xl font-medium text-gray-900 mb-2">Sneak preview</h3>
     <p class="text-lg text-gray-400">
       Quick preview of all snippets on your Clipboard for easy access.
@@ -116,75 +124,74 @@ rel="stylesheet"
 </div>
 </section>
 <!--  ################## -->
-<section class="py-32 " >
-<div class="container flex flex-col  gap-24 md:flex-row   mx-auto   items-center  justify-center flex-wrap ">
-  <img src="./images/logo-google.png" alt="" class="h-10 w-32"  />
-  <img src="./images/logo-ibm.png" alt="" class="h-10 w-32" />
-  <img src="./images/logo-microsoft.png" alt="" class="h-10 w-32" />
-  <img src="./images/logo-hp.png" alt="" class="h-10 w-24" />
-  <img src="./images/logo-vector-graphics.png" alt="" class="h-10 w-32" />
+<section class="py-32 -mt-16  -mb-16" >
+<div class="container flex flex-col  gap-16 md:gap-24 md:flex-row   mx-auto   items-center  justify-center flex-wrap ">
+  <img src="./images/logo-google.png" alt="" class="h-10 w-36"  />
+  <img src="./images/logo-ibm.png" alt="" class="h-12 w-32" />
+  <img src="./images/logo-microsoft.png" alt="" class="h-10 w-36" />
+  <img src="./images/logo-hp.png" alt="" class="h-10 w-36" />
+  <img src="./images/logo-vector-graphics.png" alt="" class="h-10 w-36" />
 </div>
 </section>
 <!--  ####################### -->
 <section class="py-16 bg-white">
 <div class="text-center mb-12 px-4">
-  <h1 class="text-3xl font-bold text-gray-900 mb-4">Clipboard for iOS and Mac OS</h1>
+  <h1 class="text-3xl font-semibold text-gray-900 mb-4">Clipboard for iOS and Mac OS</h1>
   <p class="text-lg mb-12  text-gray-400">
     Available for free on the App Store. Download for Mac or iOS, sync
-    with iCloud and <br />
+    with iCloud and <br class="hidden md:block" />
     you’re ready to start adding to your clipboard.
   </p>
   <div class=" flex flex-col w-80 md:flex-row justify-center mx-auto space-y-4 md:space-y-0 md:space-x-4  md:w-3/5">
-    <button class="bg-green-500 text-white py-4 px-8 rounded-full transform transition-transform hover:scale-110">Download for iOS</button>
+    <button class="bg-[#27bba5] text-white py-4 px-12 rounded-full transform transition-transform hover:scale-110 border-b-2 border-b-solid border-b-[#188f7b]">Download for iOS</button>
 
-    <button class=" bg-blue-500 text-white py-4 px-8 rounded-full transform transition-transform hover:scale-110 ">Download for Mac</button>
+    <button class=" bg-[#5f75fe] text-white py-4 px-12 rounded-full transform transition-transform hover:scale-110 border-b-2 border-b-solid border-b-[#4b56d4] ">Download for Mac</button>
   </div>
 </div>
 </section>
 <!--  ########################## -->
 <footer class="bg-gray-200 py-12">
 <div class=" mx-auto grid grid-cols-1  justify-items-center md:grid-cols-3 gap-8 px-4 md:px-0">
-  <img src="./images/logo.svg" alt="logo" class="mb-4 mr-10 max-w-full w-12 h-12  " />
-  <ul class="links w-96  grid grid-cols-1 gap-4  justify-items-center content-center  md:grid-cols-3  px-4 md:px-0 ">
-    <div>
-      <li class="w-auto mb-4   ">
-        <a href="#" class="text-gray-600 hover:text-green-500  ">FAQs</a>
+  <img src="./images/logo.svg" alt="logo" class="mb-4  mt-4 max-w-full w-12 h-12  mr-0 md:mr-10   " />
+  <ul class=" w-auto  grid grid-cols-1 gap-6 justify-items-center content-center -ml-0 lg:-ml-80   md:grid-cols-2 lg:grid-cols-3     px-4 md:px-0  ">
+    <div class="md:-mr-10 lg:-mr-10">
+      <li class="w-auto mb-4 text-center  ">
+        <a href="#" class="text-gray-500 hover:text-green-500      ">FAQs</a>
       </li>
       <li class="w-auto  ">
-        <a href="#" class="text-gray-600 hover:text-green-500   ">Contact Us</a>
+        <a href="#" class="text-gray-500 hover:text-green-500   ">Contact Us</a>
       </li>
 
     </div>
-    <div>
+    <div class=" md:mr-10 ml-8 lg:-mr-10">
       <li class="w-auto mb-4 ">
-        <a href="#" class="text-gray-600  hover:text-green-500 ">Privacy Policy</a>
+        <a href="#" class="text-gray-500  hover:text-green-500 ">Privacy Policy</a>
       </li>
       <li class="w-auto  ">
-        <a href="#" class="text-gray-600 hover:text-green-500  " >Press Kit</a>
+        <a href="#" class="text-gray-500 hover:text-green-500   " >Press Kit</a>
       </li>
     </div>
     
-    <li class="w-auto  mb-6  ">
-      <a href="#" class="text-gray-600 hover:text-green-500 ">Install Guide</a>
+    <li class="w-auto  mb-6 md:ml-12  ">
+      <a href="#" class="text-gray-500 hover:text-green-500 ">Install Guide</a>
     </li>
-    
   
   </ul>
-  <ul class="social w-52 flex justify-between items-center flex-wrap">
+  <ul class=" w-52 flex gap-4 items-center justify-center flex-wrap ">
     <li>
       <a href="#">
-        <img src="./images/icon-facebook.svg" alt="" class="w-6 h-6 max-w-full transition duration-300 hover:opacity-70">
+        <img src="./images/icon-facebook.svg" alt="" class="w-6 h-6 max-w-full ">
       </a>
     </li>
     
     <li>
       <a href="#">
-        <img src="./images/icon-twitter.svg" alt="" class="w-6 h-6 max-w-full hover:bg-green-600" />
+        <img src="./images/icon-twitter.svg" alt="" class="w-6 h-6 max-w-full" />
       </a>
     </li>
     <li>
       <a href="#">
-        <img src="./images/icon-instagram.svg" alt="" class="w-6 h-6 max-w-full transition duration-300 filter  hover:hue-rotate-[-50deg]" />
+        <img src="./images/icon-instagram.svg" alt="" class="w-6 h-6 max-w-full " />
       </a>
     </li>
   </ul>
